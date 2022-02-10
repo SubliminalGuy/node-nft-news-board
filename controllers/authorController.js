@@ -40,7 +40,7 @@ exports.signup_post = [
                         username: req.body.username,
                         email: req.body.email,
                         password: hashedPassword,
-                        avatarUrl: `https://avatars.dicebear.com/api/human/${req.body.username}.svg`,
+                        avatarUrl: `/images/unicorn.svg`,
                         memberstatus: "Newbie"
                     }
                 )
