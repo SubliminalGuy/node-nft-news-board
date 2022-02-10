@@ -1,0 +1,25 @@
+
+<div class="portfolio">
+    {{#each message_list}}
+    <div class="portfolio-card">
+        <h3 class="portfolio-card-title">{{this.title}}</h3>
+        <p class="portfolio-card-p">{{this.message}}</p>
+        <div class="portfolio-metadata">
+        {{#if ../isMember}}
+            <p class="portfolio-card-mini">by {{loud this.author.username}}</p>
+            <p>{{this.avatarUrl}}</p>
+            
+            <img class="avatar_small" src="{{this.author.avatarUrl}}" text="{{this.author.avatarUrl}}">
+            <p class="portfolio-card-mini">{{publishedDate this.timeStamp}}</p>
+        {{else}}
+            <p class="portfolio-card-mini">Details are only visible to members of the NFT Gossip Board.</p>
+        {{/if}}
+        {{#if ../isAdmin}}
+        <a href="/delete-message/{{this._id}}">🗑️</a>
+        {{/if}}
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+

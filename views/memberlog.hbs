@@ -1,0 +1,18 @@
+
+<form class="userform" method="POST" action="">
+    
+    <div class="form-element">
+        <label for="memberlog">Secret Member Password:</label>
+        <input type="text" name="memberlog" id="memberlog" value="" />
+    </div>
+    
+    <div class="form-element">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+<ul>
+{{#each errors}}
+    <li class="error-list">{{msg}}</li>
+{{/each}}
+</ul>

@@ -1,0 +1,151 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #555;
+  background: #333;
+  margin: 3em;
+}
+
+header {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  
+}
+
+.portfolio {
+  margin: 0;
+  margin-top: 2em;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  
+}
+
+.portfolio-title {
+  
+  text-align: center;
+  color: #00C896;
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+  margin-top: 1em;
+}
+
+
+.portfolio-card {
+  max-width: 340px;
+  box-shadow: 0 0 1em rgba(0,0,0,.25);
+  padding: 1.3em;
+  background: white;
+  border-radius: 30px;
+}
+
+.portfolio-metadata {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+/* Typografia */
+
+.portfolio-card-title {
+  font-size: 1.8rem;
+  color: #000;
+  margin-top: 0.3em;
+}
+
+.portfolio-card-p {
+  font-size: 1.1rem;
+}
+
+.portfolio-card-mini {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  margin-top: 1em;
+  
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #D6D3D1;
+}
+
+.header-p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #D6D3D1;
+}
+
+/* Pictures */
+
+.avatar_small {
+  border-radius: 40px;
+  margin: 0;
+  padding: 0;
+  width: 3em; 
+}
+
+/* Forms */
+
+ul {
+  margin: 0 auto;
+  width: 30%;
+}
+
+.error-list {
+  list-style-type: none;
+  font-size: 1.2em;
+  color: #DC2626;
+}
+
+.userform {
+  margin: 1em auto;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form-element {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1.1em;
+  text-align: center;
+}
+
+input {
+  width: 20em;
+  height: 1.6em;
+  padding: 0.3em 0.7em;
+}
+
+#message {
+  padding: 1em;
+}
+
+label {
+  font-size: 1.1rem;
+  padding: 0.7em;
+  color: #D6D3D1;
+}
+
+button {
+  font-size: 1.1rem;
+  padding: 0.7em;
+  color: #D6D3D1;
+  background-color: #3F3F46;
+  border: none
+}
+

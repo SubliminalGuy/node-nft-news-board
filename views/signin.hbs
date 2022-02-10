@@ -1,0 +1,22 @@
+
+<form class="userform" method="POST" action="">
+    
+    <div class="form-element">
+        <label for="last_name">Username:</label>
+        <input type="text" name="username" id="username" {{#if author}} value={{author.username}} {{else}} value=""{{/if}}  />
+    </div>
+    <div class="form-element">
+        <label for="email">Password:</label>
+        <input type="password" name="password" id="password" />
+    </div>
+    
+    <div class="form-element">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+<ul>
+{{#each errors}}
+    <li class="error-list">{{msg}}</li>
+{{/each}}
+</ul>

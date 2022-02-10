@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/normalize.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+  </head>
+  <body>
+    <header>
+      {{#if user}}
+      <p class="header-p">Hola, {{user.username}}!</p>
+      <a href="/post">Post A Message</a>
+      {{else}}
+      <a href="/sign-up">Sign-up</a>
+      <a href="/log-in">Log-in</a>
+      {{/if}}
+      {{#if showMemberLog}}
+        <a href="/memberlog">Become a member</a>
+      {{/if}}
+      {{#if showAdminLog}}
+        <a href="/adminlog">Become an Admin</a>
+      {{/if}}
+      {{#if user}}
+      <a href="/log-out">Log-out</a>
+      {{/if}}
+    </header>
+    <h1 class="portfolio-title">{{title}}</h1>
+    
+      {{{body}}}
+    
+  </body>
+</html>
